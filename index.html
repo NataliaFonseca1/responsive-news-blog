@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Notícias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>NEWS BLOG</h1>
+    <form>
+      <input type="search" placeholder="busque no site">
+      <button type="submit">Pesquisar</button>
+    </form>
+  </div>
+  <div id="botao-menu">
+    <button type="button">ABRIR MENU</button>
+  </div>
+  <nav class="container">
+    <ul class="menu">
+      <li>
+        ESPORTES
+        <ul class="submenu">
+        <li>
+          <a href="#">FUTEBOL</a>
+        </li>
+        <li>
+          <a href="#">BASQUETE</a>
+        </li>
+        <li>
+          <a href="#">FORMULA 1</a>
+        </li>
+    </ul>
+    </li>
+        <li>
+          ECONOMIA
+          <ul class="submenu">
+            <li>
+              <a href="#">BOLSA DE VALORES</a>
+            </li>
+            <li>
+              <a href="#">IMPOSTO DE RENDA</a>
+            </li>
+            <li>
+              <a href="#">FINANÇAS PESSOAIS</a>
+            </li>
+          </ul>
+        </li>
+    <div class="clear"></div>
+  </nav>
+</header>
+<div class=" container conteudo">
+  <main>
+    <section class="destaque">
+      <h2>Em destaque</h2>
+<article class="noticia">
+<a href="#">
+  <img src="https://via.placeholder.com/320x320" alt="">
+  <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+</a>
+</article>
+    </section>
+    <section>
+      <h2>Últimas Notícias</h2>
+ <div class="noticias">
+  <article class="noticia">
+    <a href="#">
+      <img src="https://via.placeholder.com/320x320" alt="">
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+    </a>
+    </article>
+    <article class="noticia">
+      <a href="#">
+        <img src="https://via.placeholder.com/320x320" alt="">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+      </a>
+      </article>
+      <article class="noticia">
+        <a href="#">
+          <img src="https://via.placeholder.com/320x320" alt="">
+          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+        </a>
+        </article>
+        <article class="noticia">
+          <a href="#">
+            <img src="https://via.placeholder.com/320x320" alt="">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+          </a>
+          </article>
+ </div>
+    </section>
+  </main>
+  <aside>
+    <section class="novidades">
+      <h2>Novidades</h2>
+      <article class="noticia">
+        <a href="#">
+          <img src="https://via.placeholder.com/320x320" alt="">
+          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+        </a>
+        </article>
+        <article class="noticia">
+          <a href="#">
+            <img src="https://via.placeholder.com/320x320" alt="">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+          </a>
+          </article>
+          <article class="noticia">
+            <a href="#">
+              <img src="https://via.placeholder.com/320x320" alt="">
+              <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab? Perspiciatis vel molestiae tempora fugiat?.</h3>
+            </a>
+            </article>
+    </section>
+  </aside>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+    $('#botao-menu button').click(function(){
+      $('.menu').slideToggle();
+    })
+  })
+
+</script>
+</body>
+</html>
